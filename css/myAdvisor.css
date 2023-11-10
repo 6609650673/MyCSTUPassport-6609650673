@@ -1,110 +1,63 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Advisor</title>
+    <link rel="stylesheet" href="MyAdvisor.css">
+    <link rel="preconnect" href="http://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css
+    /font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+            <nav>
+                <a href="index.html">MY ADVISOR</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="MyAdvisor.html">ADVISOR</a></li>
+                        <li><a href="">ACTIVITIES</a></li>
+                        <li><a href="aboutme.html">ABOUT ME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick ="showMenu()"></i>
+            </nav>
 
-body{
-    background-color:rgb(223, 255, 230);
-}
-.container {
-    max-width: 1150px;
-    margin: 0 auto;
-}
+    </section>
 
-nav {
-    padding: 1rem;
-    background-color:  #535353;
-    
-}
-.nav-con{
-    display: flex;
-    justify-content:space-between;
-}
-.logo {
-    font-size: 2rem;
-    color: #b9efab;
-    text-decoration: none;
-    display: inline-block;
-}
-.logo a{
-    color: #b9efab;
-    text-decoration: none;
-}
-.menu {
-    display: inline-block;
-    list-style: none;
-    align-items: center;
+    <section class="hero">
+        <div class="container">
+            <div class="hero-con">
+             <div class="hero-info">
+                <h4>
+                    ASST. PROF. Dr. Tanatorn Tanantong
+                </h4>
 
-}
-.menu li {
-    margin: 0 1rem;
-    display: inline-block;
+             </div>
+             <div class="hero-img">
+               <img src="image/DrThanatorn.jpg" alt="">
+             </div>
+            </div>
+        </div>
+     </section>
 
-}
-.menu li a {
-    color: #b9efab;
-    text-decoration: none;
+<script>
 
-}
-.hero {
-    background-color: rgb(223, 255, 230);
-}
-.hero-con {
+    var navLinks = document.getElementById("navLinks");
 
-    background-color: #a1e6b9;
-}
-.hero-info {
-    width: 100%;
-    padding: 2rem;
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
 
-}
-.hero-info h4 {
-    font-size: 2rem;
-    text-align: center;
-}
-.hero-info p {
-    margin: 1rem 0;
-}
-.hero-info .hero-btn {
-    background-color: rgb(137, 203, 143);
-    color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    display: block;
-}
-.hero-img img {
-    padding: 25px 30px 30px 100px;
-    width: 40%;
-}
-.blog-con {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-}
-.blog-title {
-    margin: 2 rem 0;
-}
-.blog-item img {
-    width: 90%;
+</script>
 
-}
-.blog-item h3 {
-    margin-top: 2rem;
-}
-.blog-item p {
-    margin: 1rem 0;
-}
-
-.footer-top {
-    margin-top: 2rem;
-    padding: 3rem ;
-    background-color: #535353;
-}
-.footer-top-item:nth-child(2) h4 {
-    margin-bottom: 1rem;
-}
-.footer-top-item:nth-child(3) h4 {
-    margin-bottom: 1rem;
-}
+</body>
+</html>
